@@ -1,0 +1,67 @@
+Package: RDFA
+Type: Package
+Title: A Doubleclick For Advertisers AP Client
+Description: Provides functions for accessing and retrieving data from the
+    Doubleclick For Advertisers APIs (https://developers.google.com/). Supports
+    OAuth 2.0 authorization. Package provides access to reporting module of DFA
+    only and is very much a bare-bones implementation.
+URL: 
+BugReports: 
+Version: 0.0.1
+Date: 2015-08-11
+Authors@R: c(
+    person(given = "Tim", family = "Beveridge",
+    email = "timmwardion@gmail.com", role = c("aut", "cre")),
+    person(given = "Artem", family = "Klevtsov",
+    email = "a.a.klevtsov@gmail.com", role = "ctb"),
+    person(given = "Philipp", family = "Upravitelev",
+    email = "upravitelev@gmail.com", role = "ctb"),
+    person(given = "Olga", family = "Shramko",
+    email = "ol1709@yahoo.com", role = "ctb"))
+License: GPL (>= 2)
+Depends:
+    R (>= 3.0.0)
+Imports:
+    utils,
+    stats,
+    httr (>= 0.6),
+    httpuv,
+    curl,
+    jsonlite,
+    shiny (>= 0.11)
+Collate:
+    'utils.R'
+    'url.R'
+    'auth.R'
+    'request.R'
+    'get-data.R'
+    'convert.R'
+    'mgmt.R'
+    'accounts.R'
+    'custom-dims.R'
+    'custom-mets.R'
+    'custom-sources.R'
+    'dfa_reports.R'
+    'experiments.R'
+    'file.R'
+    'filters.R'
+    'query.R'
+    'profiles.R'
+    'report.R'
+    'ga.R'
+    'firstdate.R'
+    'goals.R'
+    'mcf.R'
+    'metadata.R'
+    'package.R'
+    'rt.R'
+    'segments.R'
+    'shiny.R'
+    'unsampled.R'
+    'webproperties.R'
+    'zzz.R'
+Suggests:
+    knitr,
+    testthat
+VignetteBuilder: knitr
+LazyData: true
